@@ -1,0 +1,257 @@
+/* <!-- подключение шрифтов через google fonts --> */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    height: 50px; /* * */
+}
+nav {
+    /* **** липкая шапка */
+    position: fixed; /* * */
+    width: 100%; /* * */
+    height: 45px;
+    background-color: #212121;
+    z-index: 2; /* * */
+}
+.menu {
+    display: flex;
+    /* растянули по краям */
+    justify-content: space-between; 
+    /* верхнее и нижнее поля 13px - правое и левое поля 70px */
+    padding: 13px 70px;
+    margin: 0;
+    /* маркировка ul, вместо disc 0 ставим none */
+    list-style-type: none;
+}
+.menu .menu_link {
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 15px;
+}
+.menu .menu_item {
+    /* правая граница, 2пик, dotted-точечная граница */
+    border-right: 2px dotted black;
+    /* преносим границу в вправа */
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute;
+    top: 50px; /* * */
+    width: 100%;
+    height: 87px;
+    /* прозрачность 60% */
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.subheader .subheader_logo {
+    /* ссілка єто строчний єлемент, нужен display: block; чтоб подключить margin */
+    display: block;
+    /* если поменяеться логотип, максим ширина зависит от колонки */
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.subheader .subheader_call {
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 23px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+}
+
+.subheader .subheader_btn {
+    margin-top: 20px;
+    width: 172px;
+    height: 46px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    /* box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12); */
+    border: none;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 46px;
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    }
+
+    .promo {
+        min-height: 799px;
+        /* url путь к картинке, x;y-center, cover -  */
+        background: url('../img/uber_bg.png') center center/cover no-repeat;
+        padding: 155px 0 135px 0;
+    }
+
+    .promo .promo_header {
+        font-weight: 700;
+        font-size: 60px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        /* line-height: устанавливает величину пространства между строками; */
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .promo .promo_subheader {
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 36px;
+        margin-top: 22px;
+        text-align: center;
+    }
+
+    .promo .promo_descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .promo .promo_btn {
+        display: block;
+        margin: 118px auto 0 auto;
+        width: 259px;
+        height: 63px;
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+        box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 8px;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 63px;
+        /* display: flex;
+        align-items: center;
+        text-align: center; */
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    }
+
+/* ДАЛЬШЕ НАЧАЛ САМ */
+
+    /* .second {
+        padding: 71px 0 65px 0;
+    } */
+
+    .label {
+        /* взял с примера */
+        margin: 0 auto;
+        height: 24px;
+        width: 112px;
+        padding: 5px 12px;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .title {
+        /* отступ сверху */
+        margin-top: 70px;
+        /* жирность шрифта, normal bold, 9 вариантов */
+        font-weight: 700;
+        /* размер шрифта */
+        font-size: 38px;
+        /* размер между строк */
+        line-height: 48px;
+        /* поместить по центру */
+        text-align: center;
+        /* все с большой буквы */
+        text-transform: uppercase;
+        color: #222222;
+    }
+	.subtitle {
+        margin-top: 19px;
+		font-weight: 400;
+		font-size: 17px;
+		color: #222222;
+    }
+
+    .second .second_block {
+        /* именно для всей колонки в шесть колонок */
+        display: flex;
+        /* Выравнивание элементов по центру */
+        justify-content: center;
+         /* Выравнивание элементов по центру Центрировать перпендикулярно */
+        align-items: center;
+        /* отступ между строками */
+        margin-top: 35px;
+    }
+
+    .second .second_block .second_round {
+        /* расположение иконок и фотографии */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* внешний отступ справа от элемента */
+        margin-right: 26px;
+        width: 113px;
+        height: 113px;
+        background-color: #1eacc7;
+        /* из квадрата делаем круг */
+        border-radius: 100%;
+    }
+
+    .second .second_block .second_descr {
+        /* ширина текста и заголовка */
+        width: 343px;
+    }
+
+    .second .second_block .second_descr .second_subtitle {
+        /* загаловок */
+        /* жирность шрифта, normal bold, 9 вариантов */
+        font-weight: 400;
+        /* размер шрифта */
+        font-size: 17px;
+         /* размер между строк */
+        line-height: 21px;
+        display: flex;
+        /* Выравнивание элементов по центру Центрировать перпендикулярно */
+        align-items: center;
+        color: #1EACC7;
+    }
+
+    .second .second_block .second_descr .second_subtitle .second_text {
+        /* текст */
+        color: #202020;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 21px;
+    }
+
+    
+
+
+
